@@ -1,0 +1,61 @@
+{
+  "hash": "77a60581",
+  "configHash": "2e0717c4",
+  "lockfileHash": "0ea41b61",
+  "browserHash": "ee702937",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "107f7184",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "9888d0ab",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "cda76cd3",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "5ed8610e",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../../../../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "75a75666",
+      "needsInterop": false
+    },
+    "xlsx": {
+      "src": "../../../../../../node_modules/xlsx/xlsx.mjs",
+      "file": "xlsx.js",
+      "fileHash": "b421c514",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-37SPQHO4": {
+      "file": "chunk-37SPQHO4.js"
+    },
+    "browser-6M6FFRGK": {
+      "file": "browser-6M6FFRGK.js"
+    },
+    "chunk-GO2CUXLM": {
+      "file": "chunk-GO2CUXLM.js"
+    },
+    "chunk-HGWL4ZHS": {
+      "file": "chunk-HGWL4ZHS.js"
+    },
+    "chunk-4ULMLRGT": {
+      "file": "chunk-4ULMLRGT.js"
+    }
+  }
+}

@@ -22,10 +22,25 @@ let ItemService = class ItemService {
         this.itemModel = itemModel;
     }
     async processItems(items) {
-        for (const item of items) {
-            await this.itemModel.findOneAndUpdate({ name: item.name }, item, { upsert: true, new: true });
+        console.log("Processing items:", items);
+        if (!Array.isArray(items)) {
+            throw new Error("Les données doivent être un tableau");
         }
-        return { message: 'Data imported successfully' };
+        const validItems = items.map(item => ({
+            ...item,
+            updated_at: item.updated_at ? new Date(item.updated_at) : null,
+            prices: Array.isArray(item.prices) ? item.prices.map(price => parseFloat(price)) : [],
+            rate: parseFloat(item.rate) || 0,
+            category: item.category || 'product',
+        }));
+        const operations = validItems.map(item => ({
+            updateOne: {
+                filter: { name: item.name },
+                update: { $set: item },
+                upsert: true,
+            }
+        }));
+        return this.itemModel.bulkWrite(operations);
     }
 };
 exports.ItemService = ItemService;

@@ -1,3 +1,4 @@
+// src/item.schema.ts
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
@@ -22,3 +23,4 @@ export class Item {
 }
 
 export const ItemSchema = SchemaFactory.createForClass(Item);
+
