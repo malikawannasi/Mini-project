@@ -1,4 +1,7 @@
-# Mini-project
+# Mini-project!
+
+[alt text](image-1.png)
+
 
 ![alt text](image.png)
 
@@ -62,6 +65,8 @@ Ou en mode **développement** avec hot reload :
 ```bash
 npm run start
 ```
+docker build -t backend-image . 
+docker run -p 3000:3000 backend-image
 
 ### ▶️ Lancer le Frontend
 Depuis le dossier **frontend**, exécute :
